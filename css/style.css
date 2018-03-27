@@ -1,0 +1,494 @@
+
+body{
+  height: 2000px;
+font-family: 'Open Sans', sans-serif;
+  
+}
+
+* h1, h2 , h3 , h4 ,h5 {
+    color: #777;
+  }
+  * h1{
+    font-weight: bold;
+  }
+.header .centering-vh{ /*centering*/
+  
+margin-top: 25vh; 
+}
+
+.header{
+  background: url('../img/u2_state0.jpg');
+  background-size: cover;
+  height: 100vh;/* https://css-tricks.com/fun-viewport-units*/
+  color: #FFF;
+  position: relative;
+}
+.header .overlay{
+  background:rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.header h1{
+  font-weight: bold; 
+  color: #fff;
+}
+.header h1 span{
+color: #f98837;
+font-weight: normal;
+} 
+.uppercase{
+  text-transform: uppercase;
+}
+.header h1 ~ .lead::after {
+   content: "";
+    width: 74px;
+   height: 2px;
+   background: #FFF;
+   display: block; /*purpose*/
+   margin: 20px 0;
+   }
+
+   .header button{
+     background: transparent;/*clear the inside color */
+     padding: 10px 12px;
+     margin-top: 10px;
+     
+   }
+
+   .header form{
+    width: 360px;
+   background-color:#fff;
+    overflow: hidden;
+
+     
+   }
+
+   .header form .h2{
+    background-color: #f5f5f5;
+    color:#333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 30px;
+   }
+   .header form span{
+     color: #f98837;
+
+
+   }
+   .header form input{
+     color: black;
+   }
+
+  .header form .form-control{
+    margin: 0 auto 40px;
+    border: none;
+    border-radius: 0;
+   box-shadow: none;
+   width: 90%;
+  }
+
+  .header form .btn-block{
+    background: #f98837;
+    color: #FFF;
+    padding: 10px;
+    display: block;
+    border-radius: 0;
+
+ }
+
+ @media(max-width:768px) {
+   h1, h2 , h3 , h4 ,h5,p{
+    font-size: 90%;
+  }
+
+  .header {
+    margin-bottom: 400px;
+    
+  }
+
+.header form{
+  margin-top: 120px ;
+  border: 1px solid #333;
+  width: 100%;
+}
+.header button{
+  display: block;
+  margin: 20px auto;
+ }
+ .social {
+margin-bottom: 250px !important;
+ }
+ .social i{
+   margin-top: 150px;
+   
+ }
+ .Testimonials img,.Testimonials p{
+   margin-top: 30px;
+ }
+ img{
+   display: center-block;
+   width: 100%;
+ }
+ 
+}
+
+
+.social{
+  margin-top: 100px;
+}
+
+/*social*/
+.social{
+  padding: 20px;
+}
+.social i {
+  color: #ccc;
+  margin: 15px 25px;
+      -webkit-transition: all .9s all-in-ease ;
+      -moz-transition: all .9s all-in-ease ;
+      -o-transition: all .9s all-in-ease ;
+      -transition: all .9s all-in-ease ;
+      cursor: pointer;
+ 
+}
+.social .fa-facebook:hover{
+  color: #3b5998;
+ 
+}
+
+.social .fa-twitter:hover{
+  color: #1da1f2;
+ 
+}
+
+.social .fa-google-plus:hover{
+  color: #dd4b39;
+ 
+}
+
+.social .fa-pinterest:hover{
+  color: #bd081c;
+ 
+}
+
+.social .fa-instagram:hover{
+  color: #c13584;
+ 
+}
+.social .fa-rss:hover{
+  color: #f26522;
+ 
+}
+.social .fa-link:hover{
+  color: #073590;
+ 
+}
+.social h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.social p{
+  color: #ccc;
+}
+
+/*Tabs*/
+.tabs{
+  padding: 50px 0;
+  background: #f5f5f5;
+}
+.tabs .tabs-switch li{
+  background: #333;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  height: 110px; /*Center the text*/
+  line-height: 110px;/*Center the text*/
+  text-transform: uppercase;
+  
+  
+}
+.tabs .tabs-switch :hover{
+  background: #f98837 ;
+}
+.tabs .tabs-content .tab1 h2{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 36px;
+  
+}
+.tabs .tabs-content .tab1 p{
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.tabs .tabs-content .btn-lg{
+
+  background: #f98837;
+  color: #fff;
+}
+/*sublist*/
+.sublist{
+  margin-top: 70px;
+  background: #FFF;
+}
+.sublist ing{
+  margin-left: 0;
+  float: left;
+}
+.head-border::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #f98837;
+  margin: 20px 0;
+}
+.sublist i{
+  width: 40px;
+  height: 40px;
+  line-height: 37px;
+  background: #FFF;
+  color: #f98837;
+  border: 2px solid #f98837;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.sublist  .follow{
+  width: calc(100%-40px);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+ .sublist2{
+   margin-top: 30px;
+   background: #f5f5f5;
+ }
+ 
+  .sublist2 p.asd1{
+   margin-top: 30px;
+ }
+.head-border2::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #f98837;
+  margin: 20px auto;
+}
+.Awesome{
+  margin-top: 30px 0;
+}
+.Awesome i{
+  width: 40px;
+  height: 40px;
+  line-height: 37px;
+  background: #FFF;
+  color: #f98837;
+  border: 2px solid #f98837;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+
+  
+}
+.Awesome p{
+  color: #777;
+}
+.Awesome h4{
+  font-weight: bold;
+}
+
+
+.pricing{
+  background: #f5f5f5;
+  margin: 50px 0;
+  padding-top: 30px;
+  
+}
+.pricing .price-box{
+  
+  background: #fff;
+  margin-top: 90px;
+}
+.pricing .one{
+  background: #333;
+  padding: 20px 0;
+  color: #FFF;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.pricing .price-box p{
+    background: #333;
+    color: #FFF;
+    margin: 0px auto;
+    
+   
+
+}
+.pricing span{
+  font-size: 60px;
+  
+}
+.pricing h5{
+    background: #333;
+    color: #FFF;
+    padding: 20px 0;
+    margin: 0px auto;
+    border-top: 1px solid #fff;
+    border-bottom: 5px solid #f98837 ;
+
+    }
+    .pricing .orange{
+      background: #F98837;
+      padding: 20px;
+      margin-top: 0;
+      color: #fff;
+      display: block;
+      line-height: 5px;
+      font-size: 24px;
+    }
+
+    .pricing .c-box{
+      margin-top: -45px;
+    }
+    .pricing .pro-list{
+      margin-top: -5px;
+    }
+    .pricing ul{
+      margin-top: 3px;
+      color: silver;
+    }
+    .Testimonials{
+      margin: 40px 0;
+    }
+    .Testimonials img{
+      height: 50px;
+      width: 50px;
+      
+    }
+     .Testimonials p{
+       color: #777;
+     }
+    .Testimonials .row{
+      margin:0;
+      padding: 0;
+}
+.Testimonials .col-md-4 p{
+  background: #f5f5f5;
+  padding: 10px;
+  
+}
+.Testimonials .col-md-4 h5{
+  text-align: center;
+  margin-top: -40px;
+  margin-left: -20px;
+
+  }
+  .Stylish .Stylish-btn{
+    background: #FFF;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    line-height: 10px;
+    display: block;
+
+  }
+
+  .Stylish{
+  background: url('../img/u2_state0.jpg');
+  background-size: cover;
+  color: #FFF;
+  position: relative;
+  min-height: 320px;
+  margin: 30px 0;
+}
+.Stylish .overlay{
+  background:rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.Stylish .head-border2::after{
+  background-color: #fff  !important;
+}
+
+.contact{
+margin: 30px 0;
+}
+.contact .contact-btn{
+  background: #f98837;
+  color: #fff;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.contact p{
+  margin-bottom: 50px;
+}
+.contact .form-control{
+  margin-bottom: 20px;
+}
+.contact textarea{
+  height: 178px;
+  color: #333 !important;
+ 
+  
+}
+.footer{
+  background: #333;
+  color: #FFF;
+  padding: 35px;
+  height: 120px;
+}
+
+.footer .fa{
+  text-align: center;
+  margin-right: 15px ;
+  margin-bottom: 15px;
+
+  }
+  .footer .fa-facebook:hover{
+  color: #3b5998;
+ 
+}
+
+.footer .fa-twitter:hover{
+  color: #1da1f2;
+ 
+}
+
+.footer .fa-google-plus:hover{
+  color: #dd4b39;
+ 
+}
+
+.footer .fa-pinterest:hover{
+  color: #bd081c;
+ 
+}
+
+.footer .fa-instagram:hover{
+  color: #c13584;
+ 
+}
+.footer .fa-rss:hover{
+  color: #f26522;
+ 
+}
+.footer7 .fa-link:hover{
+  color: #073590;
+ 
+}
+ 
